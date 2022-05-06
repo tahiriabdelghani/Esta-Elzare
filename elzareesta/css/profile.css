@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap');
+body{
+	margin: 0;
+	padding: 0;
+	background: #f2f2f2;
+	height: 100vh;
+
+	font-family: 'Noto Sans TC', sans-serif;
+}
+.center{
+    width: 430px;
+	margin: 130px auto;
+	margin-top: 70px;
+	position: relative;
+}
+.center .header{
+	font-size: 28px;
+	font-weight: bold;
+	color: white;
+	padding: 25px 0 30px 25px;
+	background: #171c24;
+	border-bottom: 1px solid #171c24;
+    border-radius: 5px 5px 0 0;
+    
+}
+
+
+.center ul{
+	position: absolute;
+    background: white;
+    margin-top: 0px;
+	width: 100%;
+	padding: 20px 10px 10px 30px;
+	box-sizing: border-box;
+	border: 1px solid #171c24;
+	border-radius: 0 0 5px 5px;
+	
+}
+
+.center h4 
+{
+    display: inline;
+}
+.center .editname {
+    margin-left: 132px;
+    padding: 5px 10px;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    color: white;
+    background-color:#171c24;
+}
+.center .editname:hover{
+    background-color: #3A3B3C;
+}
+.center .editemail {
+    margin-left: 80px;
+    padding: 5px 10px;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    color: white;
+    background-color:#171c24;
+}
+.center .editemail:hover{
+    background-color: #3A3B3C;
+}
+.center .editpwd {
+    margin-left: 110px;
+    padding: 10px 20px;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    background-color:#171c24;
+}
+.center .editpwd:hover{
+    background-color: #3A3B3C;
+}
+
+.logo a img {
+	border-radius: 6px;
+	margin-left: 100px;
+	margin-bottom: 20px;
+}

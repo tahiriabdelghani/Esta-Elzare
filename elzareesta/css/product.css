@@ -1,0 +1,506 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    
+  }
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color:rgb(253, 242, 253);
+  }
+  
+  input,
+  select {
+    border-radius: 4px;
+  }
+  
+  header {
+    display: flex;
+    width: 90%;/*l3ard dyal lkatba f la page chehal flmya men la page*/
+    margin: auto;
+    height: 10vh;
+    align-items: center;
+  }
+  .logo-container,
+  .nav-links,
+  .cart {
+    display:flex;
+  }
+  
+  .logo {
+    width: 110px;
+    height: 40px;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+  }
+  .nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style:-moz-repeating-linear-gradient();
+    flex: 1;
+  
+  }
+  .nav-link {
+    font-size: 14px;
+    text-decoration: none;
+    color: #5f5f79;
+    padding: 5px;
+    text-transform: uppercase ;
+    cursor: pointer;
+    margin-left: 4px ;
+  }
+  .nav-link:hover{
+    border-bottom: 1px solid #5f5f79;
+  }
+  .nav-link:focus{
+    border-bottom: 1px solid #5f5f79;
+  }
+  .sign-btns{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .row {
+    display: flex;
+  }
+  .container {
+    margin: 5rem;
+  }
+  .search-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: white;
+    position:absolute;
+    top: 64px;
+    right: 7.5%;
+    width: 320px;
+    height: 30px;
+    line-height: 25px;
+    box-shadow: 0 .4px .3px 0.1px  #5f5f79;
+    border: 0.3px solid #5f5f79;
+    border-top: 3px solid #764ba2;
+  
+    border-radius: 2px;
+  }
+  .search-box:before{
+    content: "";
+    position:absolute;
+    top: -34px;
+    right: 2px;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 14px solid transparent;
+    border-bottom: 14px solid #764ba2;
+  }
+  .search-input{
+    border: .2px solid #5f5f79;
+    width: 80%;
+    border-radius:2px;
+    margin: 0 2px 0 2px;
+  
+  }
+  .products {
+    display: flex;
+    margin-right: 20px;
+    background: white;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px 20px;
+    border: none;
+    width: 65%;
+    height: 70vh;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 0.5px rgba(223, 223, 223, 0.2);
+  }
+  .btn {
+    font-size: 14px;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 10px ;
+    outline: none;
+    border: none;
+   
+  }
+  .signin-btn{
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+  }
+  .signup-btn {
+    color:  #764ba2 ;
+  background: white;
+    border: 1px solid  #764ba2 ;
+  }
+  
+  .product__content {
+    display: flex;
+    align-items: center;
+    background: none;
+  }
+  .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ececec;
+    border: none;
+    width: 12rem;
+    height: 14rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 4px rgba(163, 163, 163, 0.2);
+  }
+  
+  .image img {
+    transform: scale(0.3);
+    transition: transform 0.2s linear;
+  }
+  .image img:hover {
+    transform: translate(1%) scale(0.55);
+  }
+  .product__details {
+    display: flex;
+    background: none;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 100%;
+    width: 100%;
+    background: none;
+  }
+  .product__details h3 {
+    background: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(54, 54, 54);
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+  }
+  .buttons button {
+    border: none;
+    background: none;
+    color: gray;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .options {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .color__options,
+  .size__options,
+  .shirt__options {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    color: gray;
+    font-size: 15px;
+    font-weight:400;
+  }
+  .quantity__options input {
+    width: 66px;
+    border: 1px solid gray;
+    padding-left: 3px;
+  }
+  .size__options select {
+    padding: 0 15px;
+  }
+  .price {
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .old-price{
+    text-decoration: line-through;
+    margin-right: 10px;
+  }
+  .discount-label {
+      padding:8px; 
+      position:relative;
+  width:40px;
+  margin-left: 16px;
+  -webkit-border-radius:0 4px 0 4px;
+  -moz-border-radius:0 4px 0 4px;
+  border-radius:0 4px 4px 0;
+  
+  }
+  
+  .discount-label:after { 
+  
+      right: 100%; 
+      border: solid transparent; content: " "; 
+      height: 0; 
+      width: 0; 
+      position: absolute;
+      border-color: rgba(136, 183, 213, 0);
+       
+      border-width: 17px; 
+      top: 59%; 
+      margin-top: -20px;} 
+  
+  .discount-label span {
+    color:#ffffff;
+    font-size:14px;
+    font-weight: bold;
+    text-align:center;
+    font-family:"Raleway",Helvetica;
+    margin-left: -6px;
+  
+  }
+  .black{ 
+  background-color: #cf6cc9; 
+  
+  }
+  
+  .black:after{ 
+  border-right-color:  #cf6cc9;
+  }
+  
+  .total__amount {
+    display: flex;
+    background: white;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px 20px;
+    border: none;
+    width: 35%;
+    height: 50vh;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 0.5px rgba(223, 223, 223, 0.2);
+  }
+  .total__amount h3 {
+    color: rgb(39, 39, 39);
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .temporary__amount,
+  .shipping,
+  .total__amount_vat
+   {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    width: 100%;
+  }
+  .product__title h3 {
+  
+     font-weight: 500;
+    font-size: 20px;
+    color: black;
+  }
+  .temporary__amount,
+  .shipping p {
+    color: gray;
+    font-size: 16px;
+    font-weight: small;
+  }
+  .temporary__amount span {
+    color: black;
+  }
+  .total__amount_vat p,
+  span {
+    color: black;
+    font-weight: 500;
+  }
+  .buy-btn {
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    height: 50px;
+     width: 150px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0.3px 0.3px 2px 0.4px #764ba2;
+    outline: none;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 7px;
+  }
+  .buy-btn:hover {
+    background-image: linear-gradient(135deg, #667eea 20%, #764ba2 80%);
+    box-shadow: 0.4px 0.4px 2px 0.5px #764ba2;
+  }
+  .buy-btn:active {
+    background-image: linear-gradient(135deg, #667eea 20%, #764ba2 80%);
+    box-shadow: 0px .5px 2px 1.2px #764ba2;
+  }
+  .addtocart-btn{
+    background: white;
+    color: #764ba2 ;
+    height: 50px;
+   width: 180px;
+    border: 1.2px solid #764ba2;
+    border-radius: 5px;
+    box-shadow: 0.3px 0.3px 2px 0.4px #764ba2;
+    outline: none;
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 7px;
+  }
+  .addtowish-btn{
+    
+    background: white;
+    color: #764ba2 ;
+    height: 50px;
+    width: 150px;
+    border: 1.2px solid #764ba2;
+    border-radius: 5px;
+    box-shadow: 0.3px 0.3px 2px 0.4px #764ba2;
+    outline: none;
+    font-weight: 300;
+    font-size: 16px;
+  }
+  .cart{
+    width: 30px;
+    height: 30px;
+    margin-left: 2px;
+  }
+  .active{
+    width: 30px;
+    height: 30px;
+    margin-left: 2px;
+  }
+  .addtowish-btn:hover{
+  background: rgb(241, 241, 241);
+  } 
+  .addtocart-btn:hover{
+    background: rgb(241, 241, 241)
+  }
+  .search-btn {
+    border: 1.2px solid #764ba2;
+    color: white;
+  
+    border-radius: 2px;
+    background: #764ba2;
+    font-size: 12px;
+    width: 50px;
+  
+  
+  }
+  .btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .quantity__options {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    width: 100%;
+    margin-top: 4px;
+  }
+  .share{
+    display:flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .share span{
+    margin-right:10px;
+  }
+  .rating{
+    position: absolute;
+    margin-bottom: 30px;
+    left: 220px;
+    transform: translate(-50%,-50%) rotateY(180deg);
+    display: flex;
+  }
+  .rating input{
+    display: none;
+    /* margin-bottom: 30px; */
+  
+  }
+  .rating label{
+    cursor: pointer;
+    width: 30px;
+    margin-bottom: 20px;
+    left: 40px;
+    background: white;
+  }
+  .rating label:before{
+    content: '\f005';
+     font-family: fontAwesome;
+     position: relative;
+     display: block;
+     font-size: 20px;
+     color: #c4b4d3;
+  
+  }
+  .rating label:after{
+    content: '\f005';
+     font-family: fontAwesome;
+     position: absolute;
+     display: block;
+     font-size: 20px;
+     color: #764ba2;
+     top: 0;
+    opacity: 0;
+    transition: .5s;
+    text-shadow: 0 2 5px rgba(0,0,0,.5);
+  }
+  .rating label:hover:after,
+  .rating label:hover ~ label:after,
+  .rating input:checked  ~ label:after
+  {
+    opacity: 1;
+  
+  }
+  .author{
+    margin-top: 20px;
+  }
+  .follow-button {
+    color: #764ba2;
+    font-family: "Helvetica";
+    font-size: 10pt;
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #764ba2;
+    border-radius: 3px;
+    width: 85px;
+    height: 30px;
+    cursor: hand;		    
+  }
+  .avatar{
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+  .user{
+    display: flex;
+    align-items: center;
+    margin: 3px 8px 10px 0;
+  
+  
+  }
+  .user-name{
+    font-size: 15px;
+    color: #22222c;
+    margin-right: 8px;
+  
+  }
+  .star{
+    width: 20px;
+    height: 19px;
+    margin-left: 6px;
+  }
+  .instagram{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  .facebook{
+    width: 20px;
+    height: 20px;
+  }

@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap');
+body{
+	margin: 0;
+	padding: 0;
+	background: #f2f2f2;
+	height: 100vh;
+	font-family: 'Noto Sans TC', sans-serif;
+}
+.center{
+    width: 430px;
+	margin: 130px auto;
+	margin-top: 70px;
+	position: relative;
+}
+.center .header{
+	font-size: 28px;
+	font-weight: bold;
+	color: white;
+	padding: 25px 0 30px 25px;
+	background: #171c24;
+	border-bottom: 1px solid #171c24;
+    border-radius: 5px 5px 0 0;
+    
+}
+
+.center form{
+	position: absolute;
+	background: white;
+	width: 100%;
+	padding: 20px 10px 0 30px;
+	box-sizing: border-box;
+	border: 1px solid #171c24;
+	border-radius: 0 0 5px 5px;
+}
+form input{
+	height: 50px;
+	width: 90%;
+	padding: 0 10px;
+	border-radius: 3px;
+	border: 1px solid silver;
+	font-size: 18px;
+	outline: none;
+}
+form input[type="password"]{
+	margin-top: 20px;
+}
+form input[type="text"]{
+	margin-top: 20px;
+}
+form input[type='submit'] {
+	margin-top: 30px;
+	margin-bottom: 25px;
+	width: 370px;
+	height: 45px;
+	color: white;
+    cursor: pointer;
+    font-size: 20px;
+	line-height: 45px;
+	border-radius: 45px;
+	border-radius: 5px;
+	background: #171c24;
+}
+.logo a img {
+	border-radius: 6px;
+	margin-left: 100px;
+	margin-bottom: 20px;
+}

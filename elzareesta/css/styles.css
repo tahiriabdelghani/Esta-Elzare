@@ -1,0 +1,88 @@
+/* general */
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: arial,sans-serif;
+    font-size: 15px;
+}
+h1{
+    font-size: 45px;
+    color: white;
+}
+.cen {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+ul{
+    list-style: none;
+}
+
+
+
+
+/* header */
+header{
+    height: 120px;
+    background-color: purple;
+    
+}
+
+header h1{
+    float: left;
+    margin-top: 32px;
+}
+nav {
+    float: right;
+    margin-top: 50px;
+    position:sticky;
+}
+#gsearch{
+    width:800px;
+}
+li{
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 40px;
+    float: left;
+}
+
+/* main */
+
+
+img {
+    width: inherit;
+}
+
+.items{
+    height: 320px;
+}
+
+section div div ul{
+    margin-top: 10px;
+}
+
+
+section div div ul li {
+    width: 180px;
+    height: 250px;
+}
+
+h2{
+    margin-top: 10px;
+}
+
+
+/* footer */
+
+footer div h3{
+    text-align: center;
+}
+footer div p{
+    text-align: center;
+}
+footer{
+    background-color: purple;
+}
